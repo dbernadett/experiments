@@ -1,0 +1,19 @@
+Proof that two elements are not compared twice
+nx1 elements
+ | each element is compared against its neighbor
+(n/2)*n elements
+ | each element has only been compared against others in its group
+ | and will only be compared against elements in other groups
+...
+1*n elements
+
+Sorting is inconsistent if for some n elements, 1 > 2 > .. > n-1 > n > 1
+aka there is a chain of sorting comparisons, aka some "a" < "n" is compared to some "b" > "n" or visa-versa
+
+nx1 elements
+ | each element is compared with a new value
+(n/2)*n elements
+ | Each element is compared with a new value
+
+since each element "a" is only compared against new values, and if "b" is greater than "a", it will never be compared against 
+for each comparison "a" and "b", the greator will never be compared against the lessor's lessors.
